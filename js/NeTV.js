@@ -463,7 +463,8 @@ function fGetNextRPC(url) {
 						;
 					}
 				}
-				fGetNextRPC(url);
+				//fGetNextRPC(url);
+				window.setTimeout(fGetNextRPC, 50, url);
 			}
 		}
 		request.send();
